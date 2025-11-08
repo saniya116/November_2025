@@ -1,0 +1,30 @@
+the theory of Binary Search in Java 
+Definition:
+Binary Search is a fast searching algorithm used to find the position of a target element in a sorted array.
+It works by dividing the search interval in half repeatedly, reducing the search space with each step.
+Algorithm Steps:
+1. Start with the low index = 0 and high index = n - 1.
+2. Find the middle index →
+mid = (low + high) / 2
+3. Compare the middle element with the target element:
+If arr[mid] == key → Element found ✅
+If arr[mid] < key → Search the right half (low = mid + 1)
+If arr[mid] > key → Search the left half (high = mid - 1)
+4. Repeat steps 2–3 until the element is found or the range becomes empty.
+Example:
+Array: [10, 20, 30, 40, 50]
+Search for: 30
+Step 1 → low=0, high=4, mid=2
+arr[mid] = 30 → Element found at index 2 ✅
+Time Complexity:
+Best Case: O(1) (element found at middle)
+Average Case: O(log n)
+Worst Case: O(log n)
+Space Complexity: O(1) for iterative version, O(log n) for recursive version.
+Important Note:
+Binary Search only works on sorted arrays.
+If the array is unsorted, it must be sorted before performing binary search.
+Key Points:
+Much faster than Linear Search for large datasets.
+Uses divide and conquer technique.
+Efficient and commonly used in many algorithms.
