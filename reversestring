@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class ReverseEachWord {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a sentence: ");
+        String sentence = sc.nextLine();
+        String[] words = sentence.split(" ");
+        String reversedSentence = "";
+        for (String word : words) {
+            String reversedWord = "";
+            for (int i = word.length() - 1; i >= 0; i--) {
+                reversedWord += word.charAt(i);
+            }
+            reversedSentence += reversedWord + " ";
+        }
+        System.out.println("Reversed sentence: " + reversedSentence.trim());
+    }
+}
+
+output:
+Enter a sentence: Java is fun
+Reversed sentence: avaJ si nuf
