@@ -1,0 +1,46 @@
+Theory of Strings in Java
+What is a String?
+In Java, a String is a sequence of characters.
+Example: "Hello", "Java", "Saniya" are all strings.
+Java provides a special class called String in the java.lang package to handle text data.
+Declaring a String
+You can create a string in two ways:
+1. Using String literal:
+String name = "Saniya";
+2. Using new keyword:
+String name = new String("Saniya");
+Both create a string, but literals are stored in the String Constant Pool, while the new keyword stores them in heap memory.
+Common String Methods
+Method	Description	Example	Output
+length()	Returns length of string	"Java".length()	4
+charAt(index)	Returns character at given position	"Java".charAt(2)	'v'
+toLowerCase()	Converts to lowercase	"HELLO".toLowerCase()	"hello"
+toUpperCase()	Converts to uppercase	"java".toUpperCase()	"JAVA"
+equals(str)	Compares two strings (case-sensitive)	"Java".equals("java")	false
+equalsIgnoreCase(str)	Compares ignoring case	"Java".equalsIgnoreCase("java")	true
+concat(str)	Joins two strings	"Hello".concat("World")	"HelloWorld"
+substring(start, end)	Extracts part of string	"Saniya".substring(0,3)	"San"
+replace(old, new)	Replaces character or word	"apple".replace('p','b')	"abble"
+trim()	Removes spaces from start and end	" Java ".trim()	"Java"
+String is Immutable
+In Java, Strings are immutable, meaning once created, they cannot be changed.
+If you modify a string, a new object is created in memory.
+Example:
+String s = "Hello";
+s.concat(" World");
+System.out.println(s);  // Output: Hello
+If you print s, it stays the same. To save the new value, you must assign it:
+s = s.concat(" World");  // Now s = "Hello World"
+Mutable Strings
+If you want to modify strings frequently, use:
+StringBuilder (faster, not thread-safe)
+StringBuffer (slower, thread-safe)
+Example:
+StringBuilder sb = new StringBuilder("Hello");
+sb.append(" Java");
+System.out.println(sb);  // Output: Hello Java
+Summary:
+String = sequence of characters.
+Immutable (cannot be changed).
+Common operations: compare, join, substring, replace.
+For editable strings, use StringBuilder or StringBuffer.
