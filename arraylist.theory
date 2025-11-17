@@ -1,0 +1,5 @@
+Difference Between Array and ArrayList in Java
+Arrays and ArrayLists are both used to store multiple elements, but they differ in how they work. Array has a fixed size, meaning once it is created, its length cannot be changed. In contrast, 
+ArrayList is dynamic, so it can automatically grow or shrink when elements are added or removed. Arrays can store both primitive data types (int, char, etc.) and objects, while ArrayLists can store only objects.
+Arrays are generally faster because they use simple memory structures, but ArrayLists are more flexible, offering built-in methods like add(), 
+remove(), size(), and contains() for easy manipulation. Therefore, Arrays are suitable when the size is known in advance, whereas ArrayLists are ideal when the data size changes frequently. 
