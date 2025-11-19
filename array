@@ -1,0 +1,11 @@
+What are the differences between Array and ArrayList in Java?
+
+Ans:
+
+Array is a fixed-size data structure, while ArrayList is dynamic and can grow or shrink.
+
+Arrays can store both primitive types and objects, whereas ArrayList stores only objects.
+
+ArrayList provides built-in methods like add(), remove(), size(), but Arrays do not.
+
+ArrayList is part of Java Collections Framework, but Arrays are not.
