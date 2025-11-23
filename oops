@@ -1,0 +1,14 @@
+Explain Object-Oriented Programming (OOP) Concepts.
+
+Object-Oriented Programming (OOP) is a programming approach where software is designed using objects. The 4 main concepts are:
+
+1. Encapsulation – Wrapping data and methods into a single unit (class) and restricting direct access.
+
+
+2. Inheritance – One class (child) can acquire properties and methods of another class (parent).
+
+
+3. Polymorphism – Same function name behaves differently in different situations (method overloading and overriding).
+
+
+4. Abstraction – Showing only essential information and hiding unnecessary details from the user.
