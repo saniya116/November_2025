@@ -1,0 +1,18 @@
+Explain the difference between Compile-time
+Error 
+and Run-time Error.
+
+Answer:
+
+Compile-time errors are errors that occur when the 
+program is being compiled.
+Examples: syntax errors, missing semicolons, 
+wrong variable types.
+These errors must be fixed before the program can run.
+
+Run-time errors occur while the program is
+executing.
+Examples: dividing by zero, accessing invalid 
+array index, null pointer exception.
+These errors stop the program 
+unexpectedly during execution.
