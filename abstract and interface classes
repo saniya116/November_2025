@@ -1,0 +1,45 @@
+Explain Abstraction in Java. What are Abstract Classes and Interfaces? Give suitable examples.
+Answer:
+Abstraction is one of the most important concepts of Object-Oriented Programming in Java.
+It means showing only the necessary features of an object and hiding internal implementation details from the user.
+For example, when we use a mobile phone, we press buttons but we don’t know how internal circuits work.
+This is abstraction — we use the functionality without knowing the complexity inside.
+Why Abstraction?
+Increases security by hiding background details
+Reduces complexity for the user
+Improves maintainability of code
+Focuses on what an object does instead of how it does
+Abstract Class
+An abstract class is a class declared with the keyword abstract.
+It may contain abstract methods (without body) and non-abstract methods (with body).
+We cannot create objects of an abstract class.
+Example:
+abstract class Animal {
+    abstract void sound(); // abstract method
+    void sleep() { // normal method
+        System.out.println("Animals sleep");
+    }
+}
+class Dog extends Animal {
+    void sound() {
+        System.out.println("Dog barks");
+    }
+}
+Here, the real implementation of sound() is decided by the subclass.
+Interface
+An interface is a blueprint of a class.
+It contains only abstract methods (till Java 7)
+From Java 8 onwards, it can also have:
+default methods
+static methods
+A class uses implements keyword to implement an interface.
+A class can implement multiple interfaces (supports multiple inheritance).
+Example:
+interface Vehicle {
+    void start();
+}
+class Car implements Vehicle {
+    public void start() {
+        System.out.println("Car starts");
+    }
+}
