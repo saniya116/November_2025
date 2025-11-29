@@ -1,0 +1,25 @@
+Theory: Pass by Value in Java
+Java is always Pass by Value.
+That means → When we call a method, Java sends a copy of the value, not the original variable.
+So, any changes made inside the method will not affect the original value outside the method.
+Example:
+public class PassByValueExample {
+    public static void changeValue(int x) {
+        x = x + 5;  // This change happens only inside the method
+        System.out.println("Inside method x = " + x);
+    }
+    public static void main(String[] args) {
+        int num = 10;
+        System.out.println("Before method num = " + num);
+        changeValue(num); // Passing a COPY of num
+        System.out.println("After method num = " + num);
+    }
+}
+Output:
+Before method num = 10
+Inside method x = 15
+After method num = 10
+Why this happens?
+num value (10) is copied to x
+Only the copy (x) is changed inside the method
+So original num remains same
